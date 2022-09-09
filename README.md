@@ -1,10 +1,10 @@
 # Projeto Bytebank #
 
-A ideia desse projeto é praticar orientação a objeto usando Java, usei elemtentos da **herança** e **polimorfismo** para simular funcioanemnto de contas bancarias.
+A ideia desse projeto é praticar orientação à objeto usando Java, usei elemtentos da **herança** e **polimorfismo** para simular funcioanemnto de contas bancarias.
 
 ### Executando projeto ###
 
-Deixei na classe Main do projeto diveros métudos instanciados para melhor visualziar a funcionalidade de cada classe e seus métodos.
+Deixei na classe Main do projeto diveros métodos instanciados para melhor visualziar a funcionalidade de cada classe e seus métodos.
 
 ˋˋˋ
 
