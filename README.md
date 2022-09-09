@@ -7,6 +7,7 @@ A ideia desse projeto é praticar orientação a objeto usando Java, usei elemte
 Deixei na classe Main do projeto diveros métudos instanciados para melhor visualziar a funcionalidade de cada classe e seus métodos.
 
 ˋˋˋ
+
     // Criando clientes:
     Cliente cliente01 = new Cliente("Luiz Antonio", "111.222.333-00", "programador");
     Cliente cliente02 = new Cliente("Mirely Masieiro", "222.333.444-01", "professora");
@@ -24,6 +25,7 @@ Deixei na classe Main do projeto diveros métudos instanciados para melhor visua
 
      System.out.println("Conta de " + conta01.getTitular().nome + " tem: " + conta01.getSaldo());
      System.out.println("Conta de " + conta02.getTitular().nome + " tem: " + conta02.getSaldo());
+     
 ˋˋˋ
 
 Obrigado pelo interese! 
