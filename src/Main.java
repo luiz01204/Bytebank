@@ -16,6 +16,7 @@ public class Main {
         conta02.sacar(250);
         conta01.sacar(150);
         conta02.transfere(200, conta01);
+        conta01.sacar(10000); // Testando exception.
 
         System.out.println("Conta de " + conta01.getTitular().nome + " tem: " + conta01.getSaldo());
         System.out.println("Conta de " + conta02.getTitular().nome + " tem: " + conta02.getSaldo());

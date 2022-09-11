@@ -34,13 +34,10 @@ abstract class Conta {
     }
 
     public void sacar(double valor) {
-        if (this.saldo >= valor) {
-            this.saldo = this.saldo - valor;
-            System.out.println("sacado " + valor + " Da conta de " + this.titular.nome + " Com sucesso!");
-        } else {
-            System.out.println("Saldo insuficiente!");
+        if(this.saldo < valor) {
+            throw new SaldoInsuficienteException("Saldo: " + this.saldo + " Sacado: " + valor);
         }
-
+        this.saldo -= valor;
     }
 
     public void transfere(double valor, Conta destino) {

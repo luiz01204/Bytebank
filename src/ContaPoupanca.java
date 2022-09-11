@@ -26,25 +26,15 @@ public class ContaPoupanca extends Conta {
 
     @Override
     public void sacar(double valor) {
-        if (this.saldo >= valor) {
-            this.saldo = this.saldo - valor;
-            System.out.println("sacado " + valor + " Da conta de " + this.titular.nome + " Com sucesso!");
-            this.saldo -= 1.20;
-            System.out.println("Cobrado taxa de R$ 1,20 da conta de " + this.titular.nome + ".");
-        } else {
-            System.out.println("Saldo insuficiente!");
-        }
+        double valorAsacar = valor + 1.2;
+        super.sacar(valorAsacar);
+        System.out.println("sacado " + valor + " Da conta de " + this.titular.nome + " Com sucesso!");
+        System.out.println("Cobrado taxa de R$ 1,20 da conta de " + this.titular.nome + ".");
     }
 
+
     public void transfere(double valor, Conta destino) {
-        if(this.saldo >= valor) {
-            this.saldo -= valor;
-            System.out.println("Transferiod " + valor + " Da conta de " + this.titular.nome + " para conta de "
-                    + destino.titular.nome + " com sucesso!");
-            destino.deposita(valor);
-        } else {
-            System.out.println("Saldo insuficiente!");
-        }
+       super.transfere(valor, destino);
     }
 
 }
